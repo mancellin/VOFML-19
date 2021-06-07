@@ -1,0 +1,10 @@
+name = "VOFML_19"
+uuid = "6817f7db-9508-4067-94b1-5bd5c4997bc2"
+authors = ["Matthieu Ancellin <matthieu.ancellin@ens-paris-saclay.fr>", "Bruno Després <bruno.despres@sorbonne-universite.fr>"]
+version = "1.0"
+
+[deps]
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+
+[compat]
+julia = "^1"
