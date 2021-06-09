@@ -53,7 +53,7 @@ function symmetric_flux(α, β)
            )/4
 end
 
-invert(α) = 1 .- α
+invert(α) = map(αi -> 1 - αi, α)
 upsidedown(α) = reverse(α, dims=2)
 
 
