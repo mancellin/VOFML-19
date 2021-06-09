@@ -2,8 +2,9 @@ module VOFML_19
 
 using DelimitedFiles
 
-const coefs = [readdlm("data/" * file, ',') for file in ["W1.csv", "W2.csv", "W3.csv", "W4.csv", "W5.csv"]]
-const intercepts = [readdlm("data/" * file, ',') for file in ["b1.csv", "b2.csv", "b3.csv", "b4.csv", "b5.csv"]]
+data_dir = joinpath(dirname(pathof(@__MODULE__)), "../data")
+const coefs = [readdlm(joinpath(data_dir, file), ',') for file in ["W1.csv", "W2.csv", "W3.csv", "W4.csv", "W5.csv"]]
+const intercepts = [readdlm(joinpath(data_dir, file), ',') for file in ["b1.csv", "b2.csv", "b3.csv", "b4.csv", "b5.csv"]]
 
 # NEURAL NETWORK
 relu(x) = max(0.0, x)
