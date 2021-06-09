@@ -1,6 +1,7 @@
-# VOFML-19
+# VOFML-19: an example of machine-learned VOF scheme
 
 The purpose of this repository is to share an example of machine learning Finite Volume scheme for the 2D transport of 2-fluid flow, following the methodology of [(Després and Jourdren, JCP 2020)](https://doi.org/10.1016%2Fj.jcp.2020.109275).
+
 The scheme takes as input the values of the volume fraction in a 3×3 stencil and the Courant number and returns the volume fraction of the flux.
 This particular example is a neural network of hidden layer sizes (80, 40, 20, 10), 
 
